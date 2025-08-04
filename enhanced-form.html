@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biomedical Engineering Profile & Feedback</title>
+</head>
+<body>
+
+  <header>
+    <h1>Charles Otieno - Biomedical Engineer</h1>
+    <p>Passionate about healthcare technology and diagnostics systems.</p>
+    <img src="https://images.pexels.com/photos/287237/pexels-photo-287237.jpeg" alt="Biomedical Equipment">
+  </header>
+
+  <main>
+    <section>
+      <h2>Key Skills</h2>
+      <ul>
+        <li>Medical Equipment Maintenance</li>
+        <li>Diagnostic Device Calibration</li>
+        <li>Software Integration in Healthcare</li>
+        <li>Technical Documentation & Reports</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sample Equipment Record</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Device</th>
+            <th>Model</th>
+            <th>Last Serviced</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Autoclave</td>
+            <td>Sturdy-A7</td>
+            <td>2025-06-10</td>
+            <td>Operational</td>
+          </tr>
+          <tr>
+            <td>Blood Analyzer</td>
+            <td>Mindray BC-20</td>
+            <td>2025-07-15</td>
+            <td>Due for Service</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Feedback & Contact Form</h2>
+      <form action="#" method="POST" autocomplete="on">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="e.g., example@mail.com" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+          <option value="">--Select Department--</option>
+          <option value="radiology">Radiology</option>
+          <option value="laboratory">Laboratory</option>
+          <option value="surgical">Surgical</option>
+        </select>
+
+        <label for="date">Date of Request:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="equipment">Equipment Name:</label>
+        <input type="text" id="equipment" name="equipment" placeholder="e.g., Centrifuge" required>
+
+        <label for="serial">Serial Number:</label>
+        <input type="text" id="serial" name="serial" placeholder="e.g., SN-12345" required pattern="SN-\d{5}">
+
+        <label for="issue">Issue Description:</label>
+        <textarea id="issue" name="issue" rows="4" placeholder="Describe the equipment issue" required></textarea>
+
+        <label for="status">Service Status (Read Only):</label>
+        <input type="text" id="status" name="status" value="Pending Review" readonly>
+
+        <p>Priority:</p>
+        <input type="radio" id="high" name="priority" value="High" required>
+        <label for="high">High</label>
+        <input type="radio" id="medium" name="priority" value="Medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="low" name="priority" value="Low">
+        <label for="low">Low</label>
+
+        <p>Notify me via:</p>
+        <input type="checkbox" id="email_notify" name="notify" value="Email">
+        <label for="email_notify">Email</label>
+        <input type="checkbox" id="sms_notify" name="notify" value="SMS">
+        <label for="sms_notify">SMS</label>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Charles Otieno | Biomedical Engineering Portfolio</p>
+  </footer>
+
+</body>
+</html>
